@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-content class="form1">
+    <p>
+      <mat-form-field appearance="fill" class="fill1">
+        <img src="https://wapp.registraduria.gov.co/electoral/Elecciones-presidente-2022/resultados/IMG/cobranding.png">
+        <mat-card-title>Proyecto Mintic</mat-card-title>
+        <mat-card-subtitle>Votaciones 2022</mat-card-subtitle>
+        <!--input del seudonimo-->
+        <input matInput placeholder="ingrese su alias" [(ngModel)]="seudonimo" type="text" required="true">
+        <br>
+        <input matInput placeholder="ingrese su correo" [(ngModel)]="correo" type="email" required="true">
+        <br>
+        <input matInput placeholder="ingrese su contraseña" [(ngModel)]="contrasena" type="password" required="true">
+        <table>
+          <tr>
+            <th> <button mat-raised-button color="primary" class="btnLogin" (click)="btnLogin()">Ingresar</button>
+            </th>
+            <th><button mat-raised-button color="accent" class="btnRegister" (click)="btnRegister()">Registro</button>
+            </th>
+          </tr>
+        </table>
+      </mat-form-field>
+    </p>
+  </mat-card-content>
+</mat-card>
